@@ -1,0 +1,23 @@
+.circle {
+  width: 60%;
+  padding: 10px;
+  overflow: hidden;
+  background: linear-gradient(
+    149.88deg,
+    #4d149c 37.22%,
+    #251043 70.43%,
+    #38126d 97.89%,
+    #261045 132.38%,
+    #190634 150.9%
+  );
+  /* box-shadow: 3.559171199798584px 6.228549480438232px; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
