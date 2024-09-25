@@ -67,11 +67,11 @@ const ProjectGallery = () => {
   };
 
   return (
-    <div className="sectionfour-con">
+    <div className="sectionfour-con my-9">
       <h4 className="section_header_text">Project</h4>
       <div className="flex gap-6 lg:flex-nowrap flex-wrap my-4">
         {/* Refactored buttons with dynamic active class */}
-        {["motion", "art", "3d"].map((view) => (
+        {["motion", "art"].map((view) => (
           <button
             key={view}
             className={`${

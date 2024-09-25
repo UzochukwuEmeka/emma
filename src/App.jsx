@@ -12,6 +12,7 @@ function App() {
       <Navbar />
       <div className="container-fluid whole_page_container">
         <div className="row  flex-column">
+        
           <Sectionone />
           <Sectiontwo />
           <Sectionthree />

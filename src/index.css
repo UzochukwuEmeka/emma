@@ -72,6 +72,21 @@
   transform-style: preserve-3d;
 }
 
+.p-img {
+  position: relative;
+}
+
+.p-img::before {
+  content: '';
+  width: 100px;
+  height: 18px;
+  background-color: #11071f;
+  z-index: 2;
+  position: absolute;
+  bottom: 2px;
+  right: 0;
+}
+
 @media (min-width: 992px) {
   .whole_page_container {
     padding: 20px 150px;

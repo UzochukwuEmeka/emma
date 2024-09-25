@@ -47,7 +47,7 @@ const Sectiontwo = () => {
     
   ];
   return (
-    <div className="sectiontwo-con py-5">
+    <div className="sectiontwo-con my-5">
       <h4 className="preahvihear-regular section_header_text">
         What I Can Offer 👍👍
       </h4>

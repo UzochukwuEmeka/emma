@@ -26,7 +26,7 @@ const Sectionthree = () => {
   ]
 
   return (
-    <div className="section-three-con">
+    <div className="section-three-con my-9">
       <h4 className="section_header_text">Tools-Set</h4>
       <div className="row justify-content-between">
         {tools.map((tool,index) => (
