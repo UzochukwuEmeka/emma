@@ -1,8 +1,23 @@
-
 import RobotModelSection from "../../components/RobotModelSection";
 import "./sectionone.css";
 import { motion } from "framer-motion";
 const Sectionone = () => {
+  const phoneNumber = "+2349056132584";
+  const copyPhoneNumber = () => {
+    // Create a temporary text area to hold the phone number
+    const tempTextArea = document.createElement('textarea');
+    tempTextArea.value = phoneNumber;
+    document.body.appendChild(tempTextArea);
+
+    // Select and copy the text to the clipboard
+    tempTextArea.select();
+    document.execCommand('copy');
+
+    // Remove the temporary text area
+    document.body.removeChild(tempTextArea);
+
+    alert('WhatsApp number copied to clipboard!');
+  };
   return (
     <div className="section-one-con  mb-5">
       <div className="row justify-content-center align-items-center py-2">
@@ -12,7 +27,8 @@ const Sectionone = () => {
         </div>
         <div className="col-12" style={{ position: "relative" }}>
           <motion.a
-            href=""
+            href="https://www.upwork.com/nx/find-work/best-matches"
+            target="_blank"
             className="absolute "
             animate={{
               x: ["0%", "100%", "-100%", "0%"],
@@ -26,16 +42,17 @@ const Sectionone = () => {
           >
             <div>
               <img
-                src="/images/facebook.png"
+                src="/images/upwork.png"
                 alt="facebook"
                 loading="lazy"
                 className="w-16 "
               />
             </div>
           </motion.a>
-          <motion.a
-            href=""
-            className="absolute right-0 "
+          <motion.div
+           onClick={copyPhoneNumber}
+           
+            className="absolute right-0 cursor-pointer "
             animate={{
               x: ["0%", "-600%", "-90%", "8%"],
               y: [
@@ -52,7 +69,7 @@ const Sectionone = () => {
               ],
             }}
             transition={{
-              duration: 20,
+              duration: 90,
               repeat: Infinity,
               ease: "easeInOut",
             }}
@@ -63,7 +80,7 @@ const Sectionone = () => {
               loading="lazy"
               className="w-16"
             />
-          </motion.a>
+          </motion.div>
           <motion.a
             href=""
             className="absolute bottom-20"
@@ -133,7 +150,6 @@ const Sectionone = () => {
           <RobotModelSection />
         </div>
       </div>
-  
     </div>
   );
 };
