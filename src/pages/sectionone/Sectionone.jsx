@@ -1,4 +1,4 @@
-import TrukModel from "../../components/3dmodels/truck/TrukModel";
+
 import RobotModelSection from "../../components/RobotModelSection";
 import "./sectionone.css";
 import { motion } from "framer-motion";
@@ -133,34 +133,7 @@ const Sectionone = () => {
           <RobotModelSection />
         </div>
       </div>
-      <div className="w-full">
-        <div className="grid grid-cols-3">
-          <div className="lg:col-span-2  lg:block hidden">
-            <TrukModel />
-          </div>
-          <div>
-            <p className="preahvihear-regular my-3 text-white">
-              I thrive in collaborative environments, working closely with
-              clients and teams to transform ideas into tangible designs that
-              align with brand vision and goals. From concept to execution, I am
-              committed to delivering high-quality work that elevates a brand's
-              presence and engages its audience. My versatility allows me to
-              adapt to various design challenges, whether it's creating engaging
-              social media content, eye-catching packaging, or impactful
-              marketing materials.
-            </p>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-2">
-          <div></div>
-          <p className="preahvihear-regular my-3 text-white">
-            In every project, my aim is to push creative boundaries, staying
-            up-to-date with design trends while maintaining a focus on clear
-            communication and aesthetic harmony."
-          </p>
-        </div>
-      </div>
+  
     </div>
   );
 };
