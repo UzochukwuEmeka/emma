@@ -1,4 +1,5 @@
 import Tilt from "react-parallax-tilt";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ProjectCards = ({ img }) => {
   return (
@@ -11,7 +12,7 @@ const ProjectCards = ({ img }) => {
       glareBorderRadius="20px"
     >
       <div>
-        <img src={img} alt="" />
+        <LazyLoadImage alt={"image"} src={img} />
       </div>
     </Tilt>
   );

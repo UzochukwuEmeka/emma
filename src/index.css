@@ -86,7 +86,9 @@
   bottom: 2px;
   right: 0;
 }
-
+.truck_canvas{
+  height: 100vh !important;
+}
 @media (min-width: 992px) {
   .whole_page_container {
     padding: 20px 150px;
@@ -117,6 +119,10 @@
     width: 60%;
   }
 }
+
+/* canvas {
+  height: 80vh;
+} */
 
 @media (max-width: 992px) {
   .circle {

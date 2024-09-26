@@ -34,22 +34,11 @@ const Sectiontwo = () => {
       headText: "Storytelling Skills ",
       text: " Combines motion, design, and audio to create compelling narratives that engage the audience.",
     },
-    {
-      img: "/images/cup.svg",
-      headText: "Creativity with Constraints ",
-      text: "Capable of developing visually appealing motion graphics while working within brand guidelines and project limitations.",
-    },
-    {
-      img: "/images/cup.svg",
-      headText: "Cross-Disciplinary Collaboration",
-      text: " Works with video producers, marketers, and designers to integrate motion graphics seamlessly into larger projects.",
-    },
-    
   ];
   return (
     <div className="sectiontwo-con my-5">
-      <h4 className="preahvihear-regular section_header_text">
-        What I Can Offer 👍👍
+      <h4 className="preahvihear-regular section_header_text py-5">
+        Some of My Attribute👍👍
       </h4>
 
       <div className="row">
