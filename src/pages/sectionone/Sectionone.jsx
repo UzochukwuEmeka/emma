@@ -135,7 +135,7 @@ const Sectionone = () => {
         <div className="col-span-3">
           <h4 className=" preahvihear-regular my-3">
             I am the Motion Graphic Designer and Illustrator you’ve been looking
-            for, <br /> ready to bring your vision to life with captivating
+            for, ready to bring your vision to life with captivating
             designs and animations.
           </h4>
           <p className=" preahvihear-regular my-3">
