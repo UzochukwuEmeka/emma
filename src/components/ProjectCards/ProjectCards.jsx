@@ -4,7 +4,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 const ProjectCards = ({ img }) => {
   return (
     <Tilt
-      className="card_con my-2 parallax-effect"
+      className="card_con my-2 parallax-effect cursor-pointer"
       glareEnable={true}
       glareMaxOpacity={1}
       glareColor="#ffffff"
