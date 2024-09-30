@@ -121,7 +121,26 @@ const Sectionone = () => {
               className="w-16"
             />
           </motion.a>
-
+          <motion.a
+            href="https://drive.google.com/drive/folders/1_jpLqY2B303fClG19QNhf4KGfEx-tBAp?usp=sharing"
+            className="absolute top-10 right-0"
+            animate={{
+              x: ["0%", "-100%", "-90%", "8%"],
+              y: ["-0%", "10%", "90%", "90%", "-90%", "-80%", "-10%"],
+            }}
+            transition={{
+              duration: 12,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          >
+            <img
+              src="/images/googleDrive.png"
+              alt="facebook"
+              loading="lazy"
+              className="w-16"
+            />
+          </motion.a>
           <div className="purpule_con">
             <div className="img-con-one">
               <img src="/images/emma.png" alt="image" />
