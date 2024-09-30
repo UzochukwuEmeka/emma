@@ -34,8 +34,7 @@ const ProjectGallery = () => {
     "/project/img21.png",
     "/project/img22.png",
     "/project/img23.png",
- 
- 
+
     "/project/img30.png",
     "/project/img31.png",
     "/project/img33.png",
@@ -49,12 +48,13 @@ const ProjectGallery = () => {
   ];
 
   const motionGraphics = [
-    "/video/vid1.mp4",
+    "https://www.youtube.com/embed/nHTgkejDWTE?si=r1iUrB1scA3iAudh",
+    "https://www.youtube.com/embed/P1E-vFQfjX0?si=y-xgenTvFwQYxxgq",
     "/video/gobaltenstone.mp4",
-    "/video/truck.mp4",
     "/video/kop.mp4",
     "/video/vid3.mp4",
-    "/video/emmanuel.mp4",
+    "https://www.youtube.com/embed/FYjbep436mU?si=UI3RWT2CdBRZ2wJg",
+    "https://youtu.be/qNul50QVet0?si=FDuepZ92MQV5BevB",
   ];
   const threeDModels = ["/project/3d1.png", "/project/3d2.png"];
 
