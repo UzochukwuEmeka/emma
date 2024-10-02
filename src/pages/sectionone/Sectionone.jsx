@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 const Sectionone = () => {
   const phoneNumber = "+2349056132584";
   const copyPhoneNumber = () => {
-    // Create a temporary text area to hold the phone number
+
     const tempTextArea = document.createElement('textarea');
     tempTextArea.value = phoneNumber;
     document.body.appendChild(tempTextArea);
 
-    // Select and copy the text to the clipboard
+
     tempTextArea.select();
     document.execCommand('copy');
 

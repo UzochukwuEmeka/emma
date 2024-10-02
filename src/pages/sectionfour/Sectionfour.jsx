@@ -48,13 +48,35 @@ const ProjectGallery = () => {
   ];
 
   const motionGraphics = [
-    "https://www.youtube.com/embed/nHTgkejDWTE?si=r1iUrB1scA3iAudh",
-    "https://www.youtube.com/embed/P1E-vFQfjX0?si=y-xgenTvFwQYxxgq",
-    "/video/gobaltenstone.mp4",
-    "/video/kop.mp4",
-    "/video/vid3.mp4",
-    "https://www.youtube.com/embed/FYjbep436mU?si=UI3RWT2CdBRZ2wJg",
-    "https://youtu.be/qNul50QVet0?si=FDuepZ92MQV5BevB",
+    {
+      youtube: true,
+      vid: "https://www.youtube.com/embed/nHTgkejDWTE?si=r1iUrB1scA3iAudh",
+    },
+    {
+      youtube: true,
+      vid: "https://www.youtube.com/embed/P1E-vFQfjX0?si=y-xgenTvFwQYxxgq",
+    },
+    {
+      youtube: false,
+      vid: "/video/gobaltenstone.mp4",
+    },
+    {
+      youtube: false,
+      vid: "/video/kop.mp4",
+    },
+    {
+      youtube: false,
+      vid: "/video/vid3.mp4",
+    },
+
+    {
+      youtube: true,
+      vid: "https://www.youtube.com/embed/FYjbep436mU?si=UI3RWT2CdBRZ2wJg",
+    },
+    {
+      youtube: true,
+      vid: "https://youtu.be/qNul50QVet0?si=FDuepZ92MQV5BevB",
+    },
   ];
   const threeDModels = ["/project/3d1.png", "/project/3d2.png"];
 

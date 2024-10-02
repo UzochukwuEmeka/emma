@@ -13,7 +13,6 @@ function App() {
         <div className="row  flex-column">
           <Sectionone />
           <Sectiontwo />
-
           <Sectionthree />
           <Sectionfour />
         </div>
