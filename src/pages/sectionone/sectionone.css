@@ -1,0 +1,100 @@
+.purpule_con {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #763cac 0%,
+    rgba(50, 15, 133, 0) 100%
+  );
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+.img-con-one {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.img-con-one img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.name_text h4 {
+  font-size: 30px;
+  line-height: 130px;
+  letter-spacing: -0.6712359189987183px;
+  /* text-align: center; */
+  color: #693b93;
+}
+
+.name_text h5 {
+  font-size: 18px;
+  line-height: 111px;
+  letter-spacing: -0.5699355602264404px;
+  color: #fff;
+}
+
+.intro_text h4 {
+  font-size: 28px;
+  letter-spacing: 0.02em;
+  color: #fff;
+  position: relative;
+}
+
+.intro_text h4 .dev_text {
+  border: 1px solid #fff;
+  color: #693b93;
+  padding: 10px;
+  transform: rotate(-15.29deg);
+  position: absolute;
+  border-radius: 85% 15% 41% 59% / 88% 73% 27% 12%;
+}
+.bblob {
+  position: absolute;
+  bottom: 0%;
+  z-index: 1000;
+  opacity: 0.5;
+  width: 400px;
+  aspect-ratio: 1/1;
+  animation: animate 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite
+    alternate forwards;
+  filter: blur(40px);
+  /* z-index: -1; */
+  background: linear-gradient(
+    47deg,
+    rgba(255, 88, 139, 1) 21%,
+    rgb(0 164 173) 67%,
+    rgba(118, 74, 166, 1) 81%
+  );
+
+  /*  Optional  */
+  /*   box-shadow: inset 50px 50px 17px 0px #ff588b,
+      inset 100px 100px 17px 0px #66319f; */
+}
+
+/* .arrow_img_con {
+  position: absolute;
+} */
+
+.my_info {
+  margin-top: 30px;
+}
+.my_info h4 {
+  font-size: 28px;
+  line-height: 54px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #fff;
+}
+.my_info h4 a {
+  color: #1877f2;
+  text-decoration: none;
+}
+.my_info p {
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #fff;
+}

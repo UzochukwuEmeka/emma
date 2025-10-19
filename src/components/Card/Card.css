@@ -1,0 +1,31 @@
+.card_con {
+  box-shadow: 4.289156436920166px 7.50602388381958px 27.8795166015625px 0px
+    #0000001f;
+
+  background: linear-gradient(
+    180deg,
+    #2c1250 0%,
+    #2c1250 19.79%,
+    rgba(44, 18, 80, 0) 90.1%
+  );
+
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.card_text h4 {
+  font-size: 28px;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+}
+
+.card_text p {
+  font-size: 9px;
+  line-height: 11px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+  margin: 20px 0;
+}

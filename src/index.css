@@ -1,0 +1,336 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.poppins-extralight {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.preahvihear-regular {
+  font-family: 'Preahvihear', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.whole_page_container {
+  background-color: #11071f;
+  height: 100%;
+}
+
+.section_header_text {
+  font-size: 43px;
+  line-height: 77px;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.parallax-effect {
+  transform-style: preserve-3d;
+}
+
+.p-img {
+  position: relative;
+}
+
+.p-img::before {
+  content: '';
+  width: 100px;
+  height: 18px;
+  background-color: #11071f;
+  z-index: 2;
+  position: absolute;
+  bottom: 2px;
+  right: 0;
+}
+
+.truck_canvas {
+  height: 100vh !important;
+}
+
+#root {
+  overflow-x: hidden;
+}
+
+/* From Uiverse.io by Subaashbala */
+.modelViewPort {
+  /* The black circle background around the model*/
+  perspective: 1000px;
+  width: 100vw;
+  height: 100vh;
+  aspect-ratio: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #11071f;
+  overflow: hidden;
+}
+
+.eva {
+  --EVA-ROTATION-DURATION: 4s;
+  transform-style: preserve-3d;
+  animation: rotateRight var(--EVA-ROTATION-DURATION) linear infinite alternate;
+}
+
+.head {
+  position: relative;
+  width: 6rem;
+  height: 4rem;
+  border-radius: 48% 53% 45% 55% / 79% 79% 20% 22%;
+  background: linear-gradient(to right, white 45%, gray);
+}
+
+.eyeChamber {
+  width: 4.5rem;
+  height: 2.75rem;
+  position: relative;
+  left: 50%;
+  top: 55%;
+  border-radius: 45% 53% 45% 48% / 62% 59% 35% 34%;
+  background-color: #0c203c;
+  box-shadow: 0px 0px 2px 2px white, inset 0px 0px 0px 2px black;
+  transform: translate(-50%, -50%);
+  animation: moveRight var(--EVA-ROTATION-DURATION) linear infinite alternate;
+}
+
+.eye {
+  width: 1.2rem;
+  height: 1.5rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.eye:first-child {
+  left: 12px;
+  top: 50%;
+  background: repeating-linear-gradient(65deg,
+      #9bdaeb 0px,
+      #9bdaeb 1px,
+      white 2px);
+  box-shadow: inset 0px 0px 5px #04b8d5, 0px 0px 15px 1px #0bdaeb;
+  transform: translate(0, -50%) rotate(-65deg);
+}
+
+.eye:nth-child(2) {
+  right: 12px;
+  top: 50%;
+  background: repeating-linear-gradient(-65deg,
+      #9bdaeb 0px,
+      #9bdaeb 1px,
+      white 2px);
+  box-shadow: inset 0px 0px 5px #04b8d5, 0px 0px 15px 1px #0bdaeb;
+  transform: translate(0, -50%) rotate(65deg);
+}
+
+.body {
+  width: 6rem;
+  height: 8rem;
+  position: relative;
+  margin-block-start: 0.25rem;
+  border-radius: 47% 53% 45% 55% / 12% 9% 90% 88%;
+  background: linear-gradient(to right, white 35%, gray);
+}
+
+.hand {
+  position: absolute;
+  left: -1.5rem;
+  top: 0.75rem;
+  width: 2rem;
+  height: 5.5rem;
+  border-radius: 40%;
+  background: linear-gradient(to left, white 15%, gray);
+  box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.25);
+  transform: rotateY(55deg) rotateZ(10deg);
+}
+
+.hand:first-child {
+  animation: compensateRotation var(--EVA-ROTATION-DURATION) linear infinite alternate;
+}
+
+.hand:nth-child(2) {
+  left: 92%;
+  background: linear-gradient(to right, white 15%, gray);
+  transform: rotateY(55deg) rotateZ(-10deg);
+  animation: compensateRotationRight var(--EVA-ROTATION-DURATION) linear infinite alternate;
+}
+
+.scannerThing {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 60%;
+  top: 10%;
+  border-top: 180px solid #9bdaeb;
+  border-left: 250px solid transparent;
+  border-right: 250px solid transparent;
+  transform-origin: top left;
+  mask: linear-gradient(to right, white, transparent 35%);
+  animation: glow 2s cubic-bezier(0.86, 0, 0.07, 1) infinite;
+}
+
+.scannerOrigin {
+  position: absolute;
+  width: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  left: 60%;
+  top: 10%;
+  background: #9bdaeb;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5);
+  animation: moveRight var(--EVA-ROTATION-DURATION) linear infinite;
+}
+
+@keyframes rotateRight {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(25deg);
+  }
+}
+
+@keyframes moveRight {
+  from {
+    transform: translate(-50%, -50%);
+  }
+
+  to {
+    transform: translate(-40%, -50%);
+  }
+}
+
+@keyframes compensateRotation {
+  from {
+    transform: rotateY(55deg) rotateZ(10deg);
+  }
+
+  to {
+    transform: rotatey(30deg) rotateZ(10deg);
+  }
+}
+
+@keyframes compensateRotationRight {
+  from {
+    transform: rotateY(55deg) rotateZ(-10deg);
+  }
+
+  to {
+    transform: rotateY(70deg) rotateZ(-10deg);
+  }
+}
+
+@keyframes glow {
+  from {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  45% {
+    transform: rotate(-25deg);
+  }
+
+  75% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .whole_page_container {
+    padding: 20px 150px;
+  }
+
+  @keyframes animate {
+    0% {
+      translate: 0% -25%;
+      border-radius: 60% 40% 30% 70% / 100% 85% 92% 74%;
+    }
+
+    50% {
+      translate: 69% 13%;
+      border-radius: 20% 71% 47% 70% / 81% 15% 22% 54%;
+      rotate: 41deg;
+      scale: 1.15;
+    }
+
+    100% {
+      translate: 95% 19%;
+      border-radius: 100% 75% 92% 74% / 60% 80% 30% 70%;
+      rotate: -60deg;
+      scale: 1.05;
+    }
+  }
+
+  .my_info p {
+    width: 60%;
+  }
+}
+
+/* canvas {
+  height: 80vh;
+} */
+
+@media (max-width: 992px) {
+  .circle {
+    padding: 4px;
+  }
+
+  .card_text h4 {
+    font-size: 15px;
+  }
+
+  .project_row {
+    flex-direction: column-reverse !important;
+  }
+}
