@@ -146,7 +146,7 @@ const Sectionone = () => {
         </div>
         <div className="col-12 "></div>
       </div>
-      
+
       <div className="my_info grid lg:grid-cols-4 grid-cols-1  mt-20">
         <div className="col-span-3">
           <h4 className=" preahvihear-regular my-3">
@@ -171,10 +171,10 @@ const Sectionone = () => {
       <div className="flex items-center justify-center mt-6 ">
         <a
           className="bg-white  px-2 py-3 z-[1000] rounded-full  hover:text-[#11071f] font-bold uppercase"
-          href="/Uzochukwu_Emmanuel CV 1.pdf"
+          href="/Uzochukwu_Emmanuel.pdf"
           download
         >
-          Download My  CV
+          Download My CV
         </a>
       </div>
     </div>
